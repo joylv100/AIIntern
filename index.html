@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 实习生</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI 实习生</h1>
+        <p>0代码学习AI开发</p>
+    </header>
+    <nav>
+        <a href="#about">学习资料</a>
+        <a href="#services">工具</a>
+        <a href="#contact">社群</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>学习资料</h2>
+            <p> 链接 </p>
+        </section>
+        <section id="services">
+            <h2>工具</h2>
+            <ul>
+                <li>机器学习模型开发</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>社群</h2>
+            <p>邮箱: contact@aiintern.com</p>
+            <p>电话: 123-456-7890</p>
+        </section>
+        <section id="interaction">
+            <h2>邮箱登录</h2>
+            <input type="text" id="username" placeholder="请输入你的名字">
+            <button onclick="greetUser()">提交</button>
+            <p id="greeting"></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 AI 实习生. 版权所有.</p>
+    </footer>
+    <script>
+        function greetUser() {
+            var userName = document.getElementById("username").value;
+            if (userName) {
+                document.getElementById("greeting").innerText = "hello, " + userName;
+            } else {
+                document.getElementById("greeting").innerText = "hello, AI 实习生";
+            }
+        }
+    </script>
+</body>
+</html>
